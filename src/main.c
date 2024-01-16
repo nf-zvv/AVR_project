@@ -22,6 +22,9 @@ void Timer1_Init(void)
 
 int main(void)
 {
+	// ; Вывести в порт число 0xFF (255)
+	PORTB = 0xFF;
+
 	DDRB = 1 << PB5;
 	PORTB = 0;
 
